@@ -31,34 +31,3 @@ print('Programa finalizado')
 
 
 
-'''options = webdriver.ChromeOptions()
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--ignore-ssl-errors')
-#driver = webdriver.Chrome(chrome_options=options)'''
-
-'''
-pyautogui.click(x=260, y=50)
-pyautogui.sleep(1)
-pyautogui.press('backspace')
-pyautogui.sleep(2)
-pyautogui.write('Teste de internet')
-pyautogui.press('enter')'''
-
-'''df = pd.read_excel(fr'C:\\Users\\caduc\\Documents\\DOCS VS\\Velocidade internet.xlsx')
-df['UPLOAD'][2] = u
-df['DOWNLOAD'][2] = d
-df['DATA'][2] = data'''
-
-'''rowData = [data, d, u]
-book = openpyxl.load_workbook('Velocidade_internet.xlsx')
-writer = pd.ExcelWriter('Velocidade internet.xlsx', engine='openpyxl') 
-writer.book = book
-writer.sheets = dict(('Sheet1', ws) for ws in book.worksheets)
-rowData.to_excel(writer, "Main", cols=['DATA', 'DOWNLOAD', 'UPLOAD'])
-writer.save()'''
-
-'''wb = openpyxl.load_workbook('Velocidade internet.xlsx')
-sheet = wb.get_sheet_by_name('Sheet1')
-rowData = [data, d, u]
-sheet.append(rowData)
-wb.save('Velocidade internet.xlsx')'''
