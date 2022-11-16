@@ -16,10 +16,13 @@ def salvar_excel(dt, lst):
 
 navegador = webdriver.Chrome(service=Service(r"C:\Users\caduc\Documents\DOCS_VS\chromedriver.exe"))
 navegador.get('https://www.kabum.com.br/')
+pyautogui.sleep(2)
+pyautogui.click(x=415, y=187)
 pyautogui.sleep(3)
 navegador.find_element(By.ID, 'input-busca').send_keys('Monitor')
 pyautogui.sleep(2)
 pyautogui.press('Enter')
+pyautogui.sleep(3)
 data = datetime.date.today()
 listadf = []
 lista_produtos = navegador.find_elements(By.CLASS_NAME, 'productCard')
